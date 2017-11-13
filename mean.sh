@@ -1,8 +1,10 @@
+mkdir app
+cd app
 npm init
 git init
 mkdir routes public models middleware data views
 mkdir public/css public/js views/posts views/partials
-touch public/css/main.css public/js/main.js views/posts/index.ejs views/posts/show.ejs views/posts/new.ejs views/posts/edit.ejs views/posts/destroy.ejs views/partials/header.ejs views/partials/footer.ejs views/landing.ejs views/login.ejs views/register.ejs views/404.ejs
+touch public/css/main.css public/js/main.js views/posts/index.ejs views/posts/show.ejs views/posts/new.ejs views/posts/edit.ejs views/posts/destroy.ejs views/partials/header.ejs views/partials/footer.ejs views/landing.ejs views/login.ejs views/register.ejs views/404.ejs routes/posts.js models/post.js models/user.js
 touch app.js
 touch seeds.js
 npm install mongoose body-parser express passport passport-local passport-local-mongoose express-router ejs method-override connect-flash https --save
